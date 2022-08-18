@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #3f4144;
+}
+
+html {
+    margin: auto;
+    font-size: 14px;
+}
+
+header {
+    background-color: #d0e2ff;
+    padding: 20px;
+    padding-block-end: 3rem;
+}
+
+.container {
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+
+[class^="content-"] {
+    max-inline-size: 900px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.content-header {
+    display: grid;
+    grid-template-areas: "hd hd img";
+    align-items: center;
+}
+
+.content-header h1 {
+    padding-block-start: 2rem;
+}
+
+.content-header .apresentacao {
+    grid-area: hd;
+}
+
+.content-header .imagem {
+    grid-area: img;
+    inline-size: 100px;
+    margin: 0 1rem;
+}
+
+.content-header .perfil {
+    max-inline-size: 100%;
+    margin-block-start: 50%;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+}
+
+.content-header .cargo {
+    margin: .5rem 0;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.content .descricao {
+    margin: 1rem;
+    padding: 0 1rem;
+}
+
+section.endereco{
+    background-color: #efefef;
+}
+
+.content-endereco {
+    padding: 1.12rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: .5rem;
+}
+
+.titulos {
+    color: #4080e5;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.esquerdo {
+    font-weight: bold;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+}
+
+.empresa {
+    padding-block-end: .5rem;
+}
+
+.cargo {
+    padding-block-end: .5rem;
+}
+
+.funcoes-exercidas {
+    padding-block-end: .5rem;
+}
+
+.resultados-obtidos {
+    padding-block-end: .5rem;
+}
+
+.cursos {
+    padding-block-end: 1.5rem;
+}
